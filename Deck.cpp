@@ -23,3 +23,9 @@ void Deck::shuffle() {
         std::swap(deck[rand() % deck.size()], c);
     }
 }
+
+Card Deck::nextCard() {
+    Card temp = deck.back();
+    deck.pop_back();
+    return temp;
+}

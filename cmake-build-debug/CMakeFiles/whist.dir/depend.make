@@ -4,11 +4,23 @@
 CMakeFiles/whist.dir/Card.cpp.o: ../Card.cpp
 CMakeFiles/whist.dir/Card.cpp.o: ../Card.h
 
+CMakeFiles/whist.dir/Dealer.cpp.o: ../Card.h
+CMakeFiles/whist.dir/Dealer.cpp.o: ../Dealer.cpp
+CMakeFiles/whist.dir/Dealer.cpp.o: ../Dealer.h
+CMakeFiles/whist.dir/Dealer.cpp.o: ../Deck.h
+CMakeFiles/whist.dir/Dealer.cpp.o: ../Player.h
+
 CMakeFiles/whist.dir/Deck.cpp.o: ../Card.h
 CMakeFiles/whist.dir/Deck.cpp.o: ../Deck.cpp
 CMakeFiles/whist.dir/Deck.cpp.o: ../Deck.h
 
+CMakeFiles/whist.dir/Player.cpp.o: ../Card.h
+CMakeFiles/whist.dir/Player.cpp.o: ../Player.cpp
+CMakeFiles/whist.dir/Player.cpp.o: ../Player.h
+
 CMakeFiles/whist.dir/main.cpp.o: ../Card.h
+CMakeFiles/whist.dir/main.cpp.o: ../Dealer.h
 CMakeFiles/whist.dir/main.cpp.o: ../Deck.h
+CMakeFiles/whist.dir/main.cpp.o: ../Player.h
 CMakeFiles/whist.dir/main.cpp.o: ../main.cpp
 

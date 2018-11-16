@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/andy/CLionProjects/whist/Card.cpp" "/cygdrive/c/Users/andy/CLionProjects/whist/cmake-build-debug/CMakeFiles/whist.dir/Card.cpp.o"
+  "/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.cpp" "/cygdrive/c/Users/andy/CLionProjects/whist/cmake-build-debug/CMakeFiles/whist.dir/Dealer.cpp.o"
   "/cygdrive/c/Users/andy/CLionProjects/whist/Deck.cpp" "/cygdrive/c/Users/andy/CLionProjects/whist/cmake-build-debug/CMakeFiles/whist.dir/Deck.cpp.o"
+  "/cygdrive/c/Users/andy/CLionProjects/whist/Player.cpp" "/cygdrive/c/Users/andy/CLionProjects/whist/cmake-build-debug/CMakeFiles/whist.dir/Player.cpp.o"
   "/cygdrive/c/Users/andy/CLionProjects/whist/main.cpp" "/cygdrive/c/Users/andy/CLionProjects/whist/cmake-build-debug/CMakeFiles/whist.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

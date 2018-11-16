@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/whist.dir/main.cpp.o CMakeFiles/whist.dir/Card.cpp.o CMakeFiles/whist.dir/Deck.cpp.o  -o whist.exe -Wl,--out-implib,libwhist.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/whist.dir/main.cpp.o CMakeFiles/whist.dir/Card.cpp.o CMakeFiles/whist.dir/Deck.cpp.o CMakeFiles/whist.dir/Player.cpp.o CMakeFiles/whist.dir/Dealer.cpp.o  -o whist.exe -Wl,--out-implib,libwhist.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

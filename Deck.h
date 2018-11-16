@@ -17,6 +17,7 @@ private:
 public:
     Deck(int players);
     void shuffle();
+    Card nextCard();
 };
 
 

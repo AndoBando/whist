@@ -10,9 +10,19 @@
 string
 -
 
-/cygdrive/c/Users/andy/CLionProjects/whist/Deck.cpp
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.cpp
+Dealer.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+Player.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Player.h
+Card.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
 Deck.h
 /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+vector
+-
 
 /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
 vector
@@ -26,13 +36,13 @@ stdlib.h
 algorithm
 -
 
-/cygdrive/c/Users/andy/CLionProjects/whist/main.cpp
+/cygdrive/c/Users/andy/CLionProjects/whist/Player.h
+vector
+-
+Card.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
 iostream
 -
 string
 -
-Card.h
-/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
-Deck.h
-/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
 

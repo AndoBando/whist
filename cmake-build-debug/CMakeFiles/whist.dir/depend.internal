@@ -4,11 +4,23 @@
 CMakeFiles/whist.dir/Card.cpp.o
  /cygdrive/c/Users/andy/CLionProjects/whist/Card.cpp
  /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+CMakeFiles/whist.dir/Dealer.cpp.o
+ /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Dealer.cpp
+ /cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Player.h
 CMakeFiles/whist.dir/Deck.cpp.o
  /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
  /cygdrive/c/Users/andy/CLionProjects/whist/Deck.cpp
  /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+CMakeFiles/whist.dir/Player.cpp.o
+ /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Player.cpp
+ /cygdrive/c/Users/andy/CLionProjects/whist/Player.h
 CMakeFiles/whist.dir/main.cpp.o
  /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
  /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+ /cygdrive/c/Users/andy/CLionProjects/whist/Player.h
  /cygdrive/c/Users/andy/CLionProjects/whist/main.cpp

@@ -86,10 +86,22 @@
 		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Card.h">
 			<Option target="whist"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.cpp">
+			<Option target="whist"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h">
+			<Option target="whist"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Deck.cpp">
 			<Option target="whist"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h">
+			<Option target="whist"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Player.cpp">
+			<Option target="whist"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/Player.h">
 			<Option target="whist"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/andy/CLionProjects/whist/main.cpp">

@@ -150,6 +150,33 @@ Card.cpp.s:
 	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+Dealer.o: Dealer.cpp.o
+
+.PHONY : Dealer.o
+
+# target to build an object file
+Dealer.cpp.o:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Dealer.cpp.o
+.PHONY : Dealer.cpp.o
+
+Dealer.i: Dealer.cpp.i
+
+.PHONY : Dealer.i
+
+# target to preprocess a source file
+Dealer.cpp.i:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Dealer.cpp.i
+.PHONY : Dealer.cpp.i
+
+Dealer.s: Dealer.cpp.s
+
+.PHONY : Dealer.s
+
+# target to generate assembly for a file
+Dealer.cpp.s:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Dealer.cpp.s
+.PHONY : Dealer.cpp.s
+
 Deck.o: Deck.cpp.o
 
 .PHONY : Deck.o
@@ -176,6 +203,33 @@ Deck.s: Deck.cpp.s
 Deck.cpp.s:
 	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Deck.cpp.s
 .PHONY : Deck.cpp.s
+
+Player.o: Player.cpp.o
+
+.PHONY : Player.o
+
+# target to build an object file
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Player.cpp.o
+.PHONY : Player.cpp.o
+
+Player.i: Player.cpp.i
+
+.PHONY : Player.i
+
+# target to preprocess a source file
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Player.cpp.i
+.PHONY : Player.cpp.i
+
+Player.s: Player.cpp.s
+
+.PHONY : Player.s
+
+# target to generate assembly for a file
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Player.cpp.s
+.PHONY : Player.cpp.s
 
 main.o: main.cpp.o
 
@@ -216,9 +270,15 @@ help:
 	@echo "... Card.o"
 	@echo "... Card.i"
 	@echo "... Card.s"
+	@echo "... Dealer.o"
+	@echo "... Dealer.i"
+	@echo "... Dealer.s"
 	@echo "... Deck.o"
 	@echo "... Deck.i"
 	@echo "... Deck.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

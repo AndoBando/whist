@@ -4,10 +4,23 @@
 
 #ifndef WHIST_PLAYER_H
 #define WHIST_PLAYER_H
+#include <vector>
+#include "Card.h"
+#include <iostream>
+#include <string>
 
+class Player {
+public:
+    Player(std::string);
 
-class player {
+    void beDealt(Card);
+    void showHand();
 
+private:
+    std::string name;
+    std::vector <Card> hand;
+    bool sameSuit(Card a, Card b);
+    bool betterFace(Card a, Card b);
 };
 
 
