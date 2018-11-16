@@ -1,8 +1,10 @@
 #include <iostream>
 #include<string>
-
-
+#include "Card.h"
+#include "Deck.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Deck d = Deck(4);
+    d.shuffle();
     return 0;
 }

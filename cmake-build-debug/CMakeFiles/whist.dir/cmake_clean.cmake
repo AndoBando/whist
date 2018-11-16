@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/whist.dir/main.cpp.o"
   "CMakeFiles/whist.dir/Card.cpp.o"
+  "CMakeFiles/whist.dir/Deck.cpp.o"
   "whist.pdb"
   "whist.exe"
   "libwhist.dll.a"

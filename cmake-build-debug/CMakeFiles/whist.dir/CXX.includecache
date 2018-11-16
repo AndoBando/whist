@@ -6,7 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+string
+-
+
+/cygdrive/c/Users/andy/CLionProjects/whist/Deck.cpp
+Deck.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+
+/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+vector
+-
+Card.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+iostream
+-
+stdlib.h
+-
+algorithm
+-
+
 /cygdrive/c/Users/andy/CLionProjects/whist/main.cpp
 iostream
 -
+string
+-
+Card.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+Deck.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
 

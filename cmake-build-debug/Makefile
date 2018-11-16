@@ -150,6 +150,33 @@ Card.cpp.s:
 	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Card.cpp.s
 .PHONY : Card.cpp.s
 
+Deck.o: Deck.cpp.o
+
+.PHONY : Deck.o
+
+# target to build an object file
+Deck.cpp.o:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Deck.cpp.o
+.PHONY : Deck.cpp.o
+
+Deck.i: Deck.cpp.i
+
+.PHONY : Deck.i
+
+# target to preprocess a source file
+Deck.cpp.i:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Deck.cpp.i
+.PHONY : Deck.cpp.i
+
+Deck.s: Deck.cpp.s
+
+.PHONY : Deck.s
+
+# target to generate assembly for a file
+Deck.cpp.s:
+	$(MAKE) -f CMakeFiles/whist.dir/build.make CMakeFiles/whist.dir/Deck.cpp.s
+.PHONY : Deck.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... Card.o"
 	@echo "... Card.i"
 	@echo "... Card.s"
+	@echo "... Deck.o"
+	@echo "... Deck.i"
+	@echo "... Deck.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

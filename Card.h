@@ -7,21 +7,22 @@
 #include <string>
 
 enum Suit {CLUBS,DIAMONDS,HEARTS,SPADES};
-enum Face {ACE,KING,QUEEN,JACK,TEN};
+enum Face {ACE,KING,QUEEN,JACK,TEN,NINE,EIGHT,SEVEN,SIX,FIVE,FOUR,THREE,TWO};
 
 class Card {
 
 private:
-    const Face face;
-    const Suit suit;
-    const std::string name;
+    Face face;
+    Suit suit;
+    std::string name;
+public:
+    const std::string &getName() const;
 
 public:
     Card(Face face, Suit suit);
 
     const Face getFace() const;
     const Suit getSuit() const;
-    const std::string &getName() const;
 };
 
 
