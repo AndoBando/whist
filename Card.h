@@ -20,6 +20,7 @@ public:
 
 public:
     Card(Face face, Suit suit);
+    Card();
 
     const Face getFace() const;
     const Suit getSuit() const;

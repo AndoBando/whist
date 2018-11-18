@@ -30,7 +30,7 @@ Card::Card(Face face, Suit suit) : face(face), suit(suit) {
         case SPADES:   name += 'S'; break;
     }
 }
-
+Card::Card(){}
 const Face Card::getFace() const {
     return face;
 }

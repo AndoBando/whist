@@ -18,6 +18,7 @@ public:
     Deck(int players);
     void shuffle();
     Card nextCard();
+    bool empty();
 };
 
 

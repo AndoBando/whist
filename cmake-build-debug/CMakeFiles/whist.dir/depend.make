@@ -15,6 +15,8 @@ CMakeFiles/whist.dir/Deck.cpp.o: ../Deck.cpp
 CMakeFiles/whist.dir/Deck.cpp.o: ../Deck.h
 
 CMakeFiles/whist.dir/Player.cpp.o: ../Card.h
+CMakeFiles/whist.dir/Player.cpp.o: ../Dealer.h
+CMakeFiles/whist.dir/Player.cpp.o: ../Deck.h
 CMakeFiles/whist.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/whist.dir/Player.cpp.o: ../Player.h
 

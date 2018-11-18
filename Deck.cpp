@@ -29,3 +29,7 @@ Card Deck::nextCard() {
     deck.pop_back();
     return temp;
 }
+
+bool Deck::empty() {
+    return deck.empty();
+}

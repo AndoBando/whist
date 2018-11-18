@@ -10,16 +10,25 @@
 #include "Deck.h"
 #include <vector>
 
+class Player;
 class Dealer{
 public:
-    Dealer(std::vector <Player>* players);
+    explicit Dealer(std::vector <Player>* players);
+
     void dealCard(Player* p);
     void dealRound(int cards);
+    void pickTrump(); // 2016 lol
+    void showTrump();
+    void playTrick();
+
+    const Card &getTrickSuit() const;
+    const Card &getTrump() const;
 
 private:
     Deck deck;
     std::vector <Player>* players;
-    int playNum;
+    Card trump;
+    std::vector <Card> trick;
 };
 
 
