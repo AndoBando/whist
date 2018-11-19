@@ -5,7 +5,7 @@
 #include "Dealer.h"
 
 Dealer::Dealer( std::vector <Player>* players ) : players(players), deck(Deck((int) players->size())) {
-    dealRound(8);
+    dealRound(7);
     playTrick();
 
 }
@@ -23,7 +23,6 @@ void Dealer::dealRound(int cards) {
         }
     }
     pickTrump();
-    showTrump();
 }
 
 const Card &Dealer::getTrump() const {
@@ -45,13 +44,29 @@ void Dealer::showTrump() {
     }
 }
 
+void Dealer::showTrick() {
+    std::cout << "Trick" << "\t:\t";
+    for(auto &c :trick){
+        std::cout << c.getName() << ' ';
+    }
+    std::cout << '\n';
+}
+
 void Dealer::playTrick() {
     for( auto &p : *players){
+        showTrump();
         trick.push_back(p.playTrick(*this));
+        showTrick();
+        std::cout << "----------------------\n";
+        showTrick();
     }
 }
 
+
 const Card &Dealer::getTrickSuit() const {
-    return trick.front();
+    if (!trick.empty()) {
+        Card fCard = trick.front();
+    }
+    return fCard;
 }
 

@@ -26,7 +26,6 @@ bool Player::betterFace(Card a, Card b){
 }
 bool Player::hasSuitOf(Card a) {
     for( auto &c : hand ){
-        std::cout << sameSuit(a,c);
         if( sameSuit(c,a)) { return true;}
     }
     return false;
@@ -34,21 +33,21 @@ bool Player::hasSuitOf(Card a) {
 
 Card Player::playTrick(Dealer d) {
     showHand();
-
     int a;
-    bool cardChosen = false;
-    while(!cardChosen){
+    while(true){
         std::cout << name << "\t:\t";
         std::cin >> a;
-        if( a > hand.size() || a < 0){
+        if( a >= hand.size() || a < 0){
             std::cout << "Bad Index" << '\n';
             continue;
         }
         Card c = hand[a];
+
         if( !sameSuit(c,d.getTrump()) && hasSuitOf(d.getTrump()) ){
             std::cout << "If you have a trump, you must play it" << '\n';
             continue;
         }
+
         if( !sameSuit(c,d.getTrickSuit()) && hasSuitOf(d.getTrickSuit()) ){
             std::cout << "If you can, you must follow suit" << '\n';
             continue;

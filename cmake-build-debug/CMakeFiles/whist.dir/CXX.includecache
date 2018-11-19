@@ -10,6 +10,10 @@
 string
 -
 
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.cpp
+Dealer.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+
 /cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
 Player.h
 /cygdrive/c/Users/andy/CLionProjects/whist/Player.h
@@ -31,10 +35,6 @@ stdlib.h
 -
 algorithm
 -
-
-/cygdrive/c/Users/andy/CLionProjects/whist/Player.cpp
-Player.h
-/cygdrive/c/Users/andy/CLionProjects/whist/Player.h
 
 /cygdrive/c/Users/andy/CLionProjects/whist/Player.h
 vector

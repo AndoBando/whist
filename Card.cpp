@@ -22,15 +22,18 @@ Card::Card(Face face, Suit suit) : face(face), suit(suit) {
         case FOUR:  name += '4'; break;
         case THREE: name += '3'; break;
         case TWO:   name += '2'; break;
+        case NOFACE: name += 'N'; break;
     }
     switch (suit) {
         case CLUBS:    name += 'C'; break;
         case DIAMONDS: name += 'D'; break;
         case HEARTS:   name += 'H'; break;
         case SPADES:   name += 'S'; break;
+        case NOSUIT:   name += 'N'; break;
     }
 }
-Card::Card(){}
+Card::Card() : face(NOFACE), suit(NOSUIT){}
+
 const Face Card::getFace() const {
     return face;
 }

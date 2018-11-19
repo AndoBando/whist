@@ -18,10 +18,6 @@ int main() {
     }
 
     Dealer d = Dealer(&players);
-
-    for( auto &p : players){
-        p.showHand();
-    }
-
+    
     return 0;
 }

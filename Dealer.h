@@ -20,6 +20,7 @@ public:
     void pickTrump(); // 2016 lol
     void showTrump();
     void playTrick();
+    void showTrick();
 
     const Card &getTrickSuit() const;
     const Card &getTrump() const;
@@ -28,6 +29,7 @@ private:
     Deck deck;
     std::vector <Player>* players;
     Card trump;
+    Card fCard;
     std::vector <Card> trick;
 };
 
