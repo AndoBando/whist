@@ -19,8 +19,9 @@ public:
     void dealRound(int cards);
     void pickTrump(); // 2016 lol
     void showTrump();
-    void playTrick();
-    void showTrick();
+    Player playTrick();
+    void showTable();
+    void playRound(int i);
 
     const Card &getTrickSuit() const;
     const Card &getTrump() const;
@@ -31,6 +32,7 @@ private:
     Card trump;
     Card fCard;
     std::vector <Card> trick;
+    std::string secSep;
 };
 
 

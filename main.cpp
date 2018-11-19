@@ -18,6 +18,7 @@ int main() {
     }
 
     Dealer d = Dealer(&players);
-    
+    d.playRound(3);
+
     return 0;
 }

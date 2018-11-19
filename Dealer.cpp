@@ -5,9 +5,7 @@
 #include "Dealer.h"
 
 Dealer::Dealer( std::vector <Player>* players ) : players(players), deck(Deck((int) players->size())) {
-    dealRound(7);
-    playTrick();
-
+    secSep = "---------------------\n";
 }
 
 void Dealer::dealCard(Player* p) {
@@ -44,22 +42,33 @@ void Dealer::showTrump() {
     }
 }
 
-void Dealer::showTrick() {
-    std::cout << "Trick" << "\t:\t";
+void Dealer::showTable() {
+    std::cout << "Table" << "\t:\t";
     for(auto &c :trick){
         std::cout << c.getName() << ' ';
     }
     std::cout << '\n';
 }
 
-void Dealer::playTrick() {
+Player Dealer::playTrick() {
+    Player winningPlayer = players->front();
+    Card winningCard;
     for( auto &p : *players){
         showTrump();
+        showTable();
         trick.push_back(p.playTrick(*this));
-        showTrick();
-        std::cout << "----------------------\n";
-        showTrick();
+        if(!winningCard.betterFaceThan(trick.back()) && trick.back().sameSuit(trump)){
+            winningCard = trick.back();
+            winningPlayer = p;
+        }else if(!winningCard.betterFaceThan(trick.back()) && trick.back().sameSuit(trick.front())){
+            winningCard = trick.back();
+            winningPlayer = p;
+        }
+        std::cout << secSep;
     }
+    std::cout << winningPlayer.getName() << " won the trick with : " << winningCard.getName() << '\n';
+    std::cout << secSep;
+
 }
 
 
@@ -68,5 +77,21 @@ const Card &Dealer::getTrickSuit() const {
         Card fCard = trick.front();
     }
     return fCard;
+}
+
+void Dealer::playRound(int roundSize) {
+    for(auto &p : *players){
+        p.newRound();
+    }
+    dealRound(roundSize);
+    for(int i = 0; i < roundSize; i++) {
+        trick.clear();
+        fCard = Card();
+        playTrick().winTrick();
+    }
+    std::cout << "test";
+    for(auto &p : *players){
+        std::cout << p.getName() << " won " << p.getTricksWon() << " tricks.\n";
+    }
 }
 

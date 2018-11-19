@@ -45,3 +45,10 @@ const Suit Card::getSuit() const {
 const std::string &Card::getName() const {
     return name;
 }
+
+bool Card::betterFaceThan(Card a) {
+    return getFace() < a.getFace();
+}
+bool Card::sameSuit(Card a) {
+    return a.getSuit() == getSuit();
+}

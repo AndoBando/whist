@@ -24,6 +24,8 @@ public:
 
     const Face getFace() const;
     const Suit getSuit() const;
+    bool betterFaceThan(Card a);
+    bool sameSuit(Card a);
 };
 
 
