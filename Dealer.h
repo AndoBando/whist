@@ -19,9 +19,10 @@ public:
     void dealRound(int cards);
     void pickTrump(); // 2016 lol
     void showTrump();
-    Player playTrick();
+    void playTrick();
     void showTable();
     void playRound(int i);
+    void getWagers(int roundSize);
 
     const Card &getTrickSuit() const;
     const Card &getTrump() const;

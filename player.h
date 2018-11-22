@@ -14,23 +14,28 @@ class Dealer;
 class Player {
 public:
     Player(std::string);
+    Player();
     void beDealt(Card);
     void showHand();
-    Card playTrick(Dealer d);
-
+    void winTrick();
+    void addScore(int points);
+    void newRound();
     const std::string &getName() const;
+    Card playTrick(Dealer d);
+    int getTricksWon() const;
+    int getScore() const;
 
 private:
     std::string name;
     std::vector <Card> hand;
     bool hasSuitOf(Card a);
     int tricksWon;
+    int wager;
 public:
-    int getTricksWon() const;
-    void winTrick();
-    int getScore() const;
-    void addScore(int points);
-    void newRound();
+    int getWager() const;
+
+    void setWager(int wager);
+
 
 private:
     int score;

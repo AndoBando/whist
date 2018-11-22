@@ -8,9 +8,16 @@ void Player::beDealt(Card c) {
     hand.push_back(c);
 }
 
-Player::Player(std::string name) : hand( std::vector <Card>() ), name(name) {
+
+Player::Player() : hand( std::vector <Card>() ), name("") {
     score  = 0;
     tricksWon = 0;
+}
+
+Player::Player(std::string name){
+    score = 0;
+    tricksWon = 0;
+    this->name = name;
 }
 
 void Player::showHand() {
@@ -40,12 +47,10 @@ Card Player::playTrick(Dealer d) {
             continue;
         }
         Card c = hand[a];
-
         if( !c.sameSuit(d.getTrump()) && hasSuitOf(d.getTrump()) ){
             std::cout << "If you have a trump, you must play it" << '\n';
             continue;
         }
-
         if( !c.sameSuit(d.getTrickSuit()) && hasSuitOf(d.getTrickSuit()) ){
             std::cout << "If you can, you must follow suit" << '\n';
             continue;
@@ -65,7 +70,8 @@ int Player::getTricksWon() const {
 }
 
 void Player::winTrick() {
-   Player::tricksWon++;
+    Player::tricksWon++;
+
 }
 void Player::newRound() {
     Player::tricksWon = 0;
@@ -78,4 +84,13 @@ int Player::getScore() const {
 void Player::addScore(int points) {
     Player::score += points;
 }
+
+void Player::setWager(int wager) {
+    Player::wager = wager;
+}
+
+int Player::getWager() const {
+    return wager;
+}
+
 
