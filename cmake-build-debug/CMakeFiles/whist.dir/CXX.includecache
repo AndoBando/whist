@@ -23,6 +23,8 @@ Deck.h
 /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
 vector
 -
+stdlib.h
+-
 
 /cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
 vector
@@ -47,8 +49,26 @@ iostream
 -
 string
 -
+fstream
+-
 Card.h
 /cygdrive/c/Users/andy/CLionProjects/whist/Card.h
 Dealer.h
 /cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+
+/cygdrive/c/Users/andy/CLionProjects/whist/main.cpp
+iostream
+-
+string
+-
+vector
+-
+Card.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Card.h
+Deck.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Deck.h
+Dealer.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Dealer.h
+Player.h
+/cygdrive/c/Users/andy/CLionProjects/whist/Player.h
 

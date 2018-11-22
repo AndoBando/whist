@@ -7,6 +7,7 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "Card.h"
 #include "Dealer.h"
 

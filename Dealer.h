@@ -9,6 +9,7 @@
 #include "Card.h"
 #include "Deck.h"
 #include <vector>
+#include <stdlib.h>
 
 class Player;
 class Dealer{
@@ -27,6 +28,8 @@ public:
     const Card &getTrickSuit() const;
     const Card &getTrump() const;
 
+    Player getWinner();
+
 private:
     Deck deck;
     std::vector <Player>* players;
@@ -34,6 +37,7 @@ private:
     Card fCard;
     std::vector <Card> trick;
     std::string secSep;
+    int playerShift;
 };
 
 

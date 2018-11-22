@@ -21,11 +21,14 @@ Player::Player(std::string name){
 }
 
 void Player::showHand() {
-    std::cout << name << "\t:\t";
+    remove("hand.txt");
+    std::ofstream fout;
+    fout.open("hand.txt");
+    fout << name << "\t:\t";
     for(auto &c :hand){
-        std::cout << c.getName() << ' ';
+        fout << c.getName() << ' ';
     }
-    std::cout << '\n';
+    fout << '\n';
 }
 
 
@@ -42,6 +45,7 @@ Card Player::playTrick(Dealer d) {
     while(true){
         std::cout << name << "\t:\t";
         std::cin >> a;
+        a--;
         if( a >= hand.size() || a < 0){
             std::cout << "Bad Index" << '\n';
             continue;
